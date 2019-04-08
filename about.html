@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Oksana gorid - stylist&colorist</title>
+        <meta charset="utf-8">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="about-container">
+            <div class="sidebar">
+                <div class="logo">
+                    <img class="logo__img" src="imgs/logo.png" alt="logo">
+                </div>
+                <div class="nav">
+                    <a href="about.html" class="nav__item">обо мне</a>
+                    <a href="coloration.html" class="nav__item">окрашивания</a>
+                    <a href="my-works.html" class="nav__item">мои работы</a>
+                    <a href="price.html" class="nav__item">прейскурант</a>
+                </div>
+                <div class="contacts">
+                    <a href="https://www.instagram.com/oksanagorid/" target="_blank" class="contacts__insta"></a>
+                    <a href="https://www.instagram.com/oksanagorid/" target="_blank" class="contacts__insta-link">instagram</a>
+                    <p class="contacts__phone">098 27 100 49</p>
+                </div>
+            </div>
+            <div class="main-content-box">
+                <div class="photo"></div>
+                <div class="title-name">Oksana Gorid</div>
+                <div class="profession">stylist <span class="amp">&</span> colorist</div>
+                <div class="info-box">
+                    <div class="leftbar-content">
+                        <p class="about-text">Здравствуйте, меня зовут Оксана Горид. По специальности я стилист-колорист. В профессию пришла около трех
+                             лет назад, когда наконец появилось время заниматься своим любимым делом. Предпосылки к этому были давно: 8 лет 
+                             художественной школы за плечами и 15 лет торговли. 
+                             Школа помогает в понимании цвета и формы, а опыт торговли помог слушать и, что немало важно, слышать пожелания клиента.
+                        </p>
+                    </div>
+                    <div class="rightbar-content">
+                        <p class="about-text">По-этому, с удовольствием, закончила курсы парикмахерского искусства и колористики в учебном центре 
+                            "Элина", успешно сдала экзамены и сразу приступила к работе. На сегодняшний день работаю в салоне, на базе школы которого 
+                            продолжаю повышать свою квалификацию по барберингу и колорированию.
+                            Я держу руку на пульсе современных трендов и могу сделать стрижку или окрашивание "по фото" из интернета.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="hamburger">
+                <button class="button hamburger__button js-menu__toggle">
+                    <span class="hamburger__label">Open menu</span>
+                </button>
+            </div>
+            <nav class="menu">
+                <ul class="list menu__list">
+                    <li class="menu__group">
+                        <a href="about.html" class="link menu__link">обо мне</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="coloration.html" class="link menu__link">окрашивания</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="my-works.html" class="link menu__link">мои работы</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="price.html" class="link menu__link">прейскурант</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="https://www.instagram.com/oksanagorid/" target="_blank" class="link menu__link">instagram</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="#" target="_blank" class="link menu__link link-phone">098 27 100 49</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            (function(){
+                'use strict';
+
+                class Component {
+        
+                printError(error) {
+ 
+                    if (typeof error !== 'string' || error.length === 0) {
+                        return console.log('you did not give arguments');
+                    }
+      
+                    return console.log(error);
+                    }    
+    
+                    toggleСlass(node, className) {
+                        return  node.classList.toggle(className);
+                    }    
+                }
+  
+                class Menu extends Component {
+    
+                constructor(settings) {
+                    super();
+                this.menuNode = settings.menuNode;
+                }
+    
+                toggleMenuState(className) {      
+      
+                if (typeof className !== 'string' || className.length === 0){
+                    return super.printError('you did not give the class name for the toggleState function');
+                } 
+      
+                return super.toggleСlass(this.menuNode, className);
+                }
+            }
+
+            let jsMenuNode = document.querySelector('body');
+  
+            let demoMenu = new Menu ({
+                menuNode: jsMenuNode
+            });
+  
+            function callMenuToggle() {
+                demoMenu.toggleMenuState('js-menu_activated');
+            }
+  
+            jsMenuNode.querySelector('.js-menu__toggle').addEventListener('click', callMenuToggle);
+            })();
+        </script>
+    </body>
+</html>

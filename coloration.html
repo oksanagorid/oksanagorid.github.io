@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Oksana gorid - stylist&colorist</title>
+        <meta charset="utf-8">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="about-container">
+            <div class="sidebar">
+                <div class="logo">
+                    <img class="logo__img" src="imgs/logo.png" alt="logo">
+                </div>
+                <div class="nav">
+                    <a href="about.html" class="nav__item">обо мне</a>
+                    <a href="coloration.html" class="nav__item">окрашивания</a>
+                    <a href="my-works.html" class="nav__item">мои работы</a>
+                    <a href="price.html" class="nav__item">прейскурант</a>
+                </div>
+                <div class="contacts">
+                    <a href="https://www.instagram.com/oksanagorid/" target="_blank" class="contacts__insta"></a>
+                    <a href="https://www.instagram.com/oksanagorid/" target="_blank" class="contacts__insta-link">instagram</a>
+                    <p class="contacts__phone">098 27 100 49</p>
+                </div>
+            </div>
+            <div class="main-content-box">
+                <h1 class="title-name title-name-down">Техники окрашивания</h1>
+                <div class="coloration-container">
+                    <div class="service-bl">
+                        <div class="service-bl-col"></div>
+                        <div class="service-bl-inner service-bl-inner-first">
+                            <h1 class="service-bl-inner__title">Мелирование</h1>
+                            <p class="service-bl-inner__description">
+                                техника окрашивания волос прядями одного цвета. Чаще всего светлым. Само слово переводится как "смешивание". После
+                                мелирования основной цвет волос смешивается с окрашенными локонами.
+                            </p>
+                            <a href="my-works.html#melirovanie" class="service-bl-inner__btn">фото</a>
+                        </div>
+                    </div>
+                    <div class="service-bl">
+                        <div class="service-bl-col"></div>
+                        <div class="service-bl-inner service-bl-inner-second">
+                            <h1 class="service-bl-inner__title">Балаяж</h1>
+                            <p class="service-bl-inner__description">
+                                    техника мелирования, при которой окрашиваются преимущественно кончики волос. Идеально подходит тем, кто не хочет окрашивать волосы 
+                                    полностью. Очень хорошо смотрится на стрижке "каскад".                                    
+                            </p>
+                            <a href="my-works.html#balayaj" class="service-bl-inner__btn">фото</a>
+                        </div>
+                    </div>
+                    <div class="service-bl">
+                        <div class="service-bl-col"></div>
+                        <div class="service-bl-inner service-bl-inner-third">
+                            <h1 class="service-bl-inner__title">Шатуш</h1>
+                            <p class="service-bl-inner__description">
+                                    техника окрашивания, при которой переход цвета осуществляется горизонтально и максимально естественно. Подходит тем, кто хочет сохранить 
+                                    основной цвет и сделать его более живым и динамичным.
+                            </p>
+                            <a href="my-works.html#shatuj" class="service-bl-inner__btn">фото</a>
+                        </div>
+                    </div>
+                    <div class="service-bl">
+                        <div class="service-bl-col"></div>
+                        <div class="service-bl-inner service-bl-inner-fourth">
+                            <h1 class="service-bl-inner__title">Калифорнийское мелирование</h1>
+                            <p class="service-bl-inner__description">
+                                    выполняется без использования фольги. Это открытая техника мелирования, в работе которой используется эффект лопатка.
+                                    Данная техника менее травматична для волос.
+                            </p>
+                            <a href="my-works.html#californication" class="service-bl-inner__btn">фото</a>
+                        </div>
+                    </div>
+                    <div class="service-bl">
+                        <div class="service-bl-col"></div>
+                        <div class="service-bl-inner service-bl-inner-fifth">
+                            <h1 class="service-bl-inner__title">Санлайт</h1>
+                            <p class="service-bl-inner__description">
+                                    эффект выгоревших волос, который достигается с помощью осветления отдельных тонких прядей с последующим тонированием.
+                            </p>
+                            <a href="my-works.html#sunlight" class="service-bl-inner__btn">фото</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="hamburger">
+                <button class="button hamburger__button js-menu__toggle">
+                    <span class="hamburger__label">Open menu</span>
+                </button>
+            </div>
+            <nav class="menu">
+                <ul class="list menu__list">
+                    <li class="menu__group">
+                        <a href="about.html" class="link menu__link">обо мне</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="coloration.html" class="link menu__link">окрашивания</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="my-works.html" class="link menu__link">мои работы</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="price.html" class="link menu__link">прейскурант</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="https://www.instagram.com/oksanagorid/" target="_blank" class="link menu__link">instagram</a>
+                    </li>
+                    <li class="menu__group">
+                        <a href="#" target="_blank" class="link menu__link link-phone">098 27 100 49</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            (function(){
+                'use strict';
+    
+                class Component {
+            
+                printError(error) {
+     
+                    if (typeof error !== 'string' || error.length === 0) {
+                        return console.log('you did not give arguments');
+                    }
+          
+                    return console.log(error);
+                    }    
+        
+                    toggleСlass(node, className) {
+                        return  node.classList.toggle(className);
+                    }    
+                }
+      
+                class Menu extends Component {
+        
+                constructor(settings) {
+                    super();
+                this.menuNode = settings.menuNode;
+                }
+        
+                toggleMenuState(className) {      
+          
+                if (typeof className !== 'string' || className.length === 0){
+                    return super.printError('you did not give the class name for the toggleState function');
+                } 
+          
+                return super.toggleСlass(this.menuNode, className);
+                }
+            }
+    
+            let jsMenuNode = document.querySelector('body');
+      
+            let demoMenu = new Menu ({
+                menuNode: jsMenuNode
+            });
+      
+            function callMenuToggle() {
+                demoMenu.toggleMenuState('js-menu_activated');
+            }
+      
+            jsMenuNode.querySelector('.js-menu__toggle').addEventListener('click', callMenuToggle);
+            })();
+        </script>
+    </body>
+</html>
