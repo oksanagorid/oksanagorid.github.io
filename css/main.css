@@ -586,9 +586,13 @@ video {
   display: flex;
   margin: 50px auto;
   padding: 0 5%; }
-  @media (min-width: 300px) and (max-width: 900px) {
+  @media (min-width: 600px) and (max-width: 900px) {
     .info-box {
       display: block; } }
+  @media (min-width: 300px) and (max-width: 599px) {
+    .info-box {
+      display: block;
+      width: 100%; } }
 
 .leftbar-content {
   width: 50%;
@@ -613,10 +617,14 @@ video {
     .leftbar-content:before,
     .rightbar-content:before {
       font-size: 22vw; } }
-  @media (min-width: 300px) and (max-width: 600px) {
+  @media (min-width: 450px) and (max-width: 600px) {
     .leftbar-content:before,
     .rightbar-content:before {
       font-size: 30vw; } }
+  @media (min-width: 300px) and (max-width: 449px) {
+    .leftbar-content:before,
+    .rightbar-content:before {
+      font-size: 45vw; } }
 
 .rightbar-content {
   width: 50%;
@@ -643,10 +651,10 @@ video {
       font-size: 2.6vw; } }
   @media (min-width: 400px) and (max-width: 599px) {
     .about-text {
-      font-size: 3.6vw; } }
+      font-size: 4.2vw; } }
   @media (min-width: 300px) and (max-width: 399px) {
     .about-text {
-      font-size: 4.3vw;
+      font-size: 4.8vw;
       padding: 0 2%; } }
 
 .coloration-container {
@@ -758,6 +766,9 @@ video {
     transition: .4s;
     z-index: 3;
     outline: none; }
+    @media (min-width: 300px) and (max-width: 600px) {
+      .service-bl-inner__btn {
+        opacity: 1; } }
   .service-bl-inner__btn:hover {
     -webkit-box-shadow: 0 0 15px #662D8C, inset 0 0 15px #662D8C;
             box-shadow: 0 0 15px #662D8C, inset 0 0 15px #662D8C;
@@ -825,6 +836,9 @@ video {
   position: absolute;
   top: 20%;
   left: 0; }
+  @media (min-width: 300px) and (max-width: 600px) {
+    .work-title:before {
+      width: 6px; } }
 
 .gallery-box {
   display: -webkit-box;
@@ -1005,6 +1019,9 @@ video {
   left: 60%;
   z-index: -10;
   opacity: 0.1; }
+  @media (min-width: 300px) and (max-width: 600px) {
+    .decor-element {
+      left: 20%; } }
 
 .decor-element:before {
   content: '';
@@ -1080,3 +1097,7 @@ video {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1); }
+
+.opacity-footer {
+  width: 100%;
+  height: 70px; }
