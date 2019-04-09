@@ -224,8 +224,7 @@ body {
   overflow-x: hidden; }
 
 video {
-  -o-object-fit: cover;
-     object-fit: cover; }
+  width: 100%; }
 
 .wrapper {
   overflow-y: hidden;
