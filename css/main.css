@@ -1107,8 +1107,50 @@ video {
   display: none; }
   @media (min-width: 300px) and (max-width: 600px) {
     .opacity-footer {
+      display: block;
       width: 100%;
-      height: 70px; } }
+      height: 70px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px; }
+
+.prev,
+.next {
+  text-decoration: none;
+  color: #e2e2e2;
+  font-size: 20px;
+  font-family: Poiret, sans-serif;
+  position: relative;
+  top: -20px; }
+
+.prev:before {
+  content: '<';
+  position: relative;
+  top: 4px;
+  right: 5px; }
+
+.next:after {
+  content: '>';
+  position: relative;
+  top: 4px;
+  left: 5px; }
 
 .padding-bottom {
   padding-bottom: 40px; }
