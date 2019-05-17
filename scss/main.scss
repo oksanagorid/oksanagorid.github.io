@@ -43,6 +43,7 @@ video{
 .wrapper:before{
     content:'';
     display:block;
+    *display:none;
     position:absolute;
     top:0;
     left:0;
@@ -50,7 +51,7 @@ video{
     right:0;
     background:linear-gradient(to right,  #ED1E79, #ED1E79,#662D8C,#2E3192,#D74177,#ED1E79);
     pointer-events: none;
-    mix-blend-mode: color;
+    mix-blend-mode: overlay;
     z-index:1;
 
 }
@@ -62,7 +63,7 @@ video{
     transform:translateY(-70%);
 }
 .main-title{
-    color:red;
+    color:#ED1E79;
     font-size:9vw;
     @media (min-width:1200px) {
         font-size:6vw;
@@ -817,3 +818,6 @@ video{
 .padding-bottom{
     padding-bottom:40px;
 }
+
+
+

@@ -249,6 +249,7 @@ video {
 .wrapper:before {
   content: '';
   display: block;
+  *display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -259,7 +260,7 @@ video {
   background: -o-linear-gradient(left, #ED1E79, #ED1E79, #662D8C, #2E3192, #D74177, #ED1E79);
   background: linear-gradient(to right, #ED1E79, #ED1E79, #662D8C, #2E3192, #D74177, #ED1E79);
   pointer-events: none;
-  mix-blend-mode: color;
+  mix-blend-mode: overlay;
   z-index: 1; }
 
 .main-box {
@@ -272,7 +273,7 @@ video {
           transform: translateY(-70%); }
 
 .main-title {
-  color: red;
+  color: #ED1E79;
   font-size: 9vw;
   font-family: Quicksans, sans-serif;
   text-transform: uppercase; }
