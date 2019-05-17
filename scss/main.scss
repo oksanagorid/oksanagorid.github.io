@@ -43,7 +43,7 @@ video{
 .wrapper:before{
     content:'';
     display:block;
-    -ms-display:none;
+    *display:none;
     position:absolute;
     top:0;
     left:0;
@@ -821,3 +821,12 @@ video{
 
 
 
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+
+@supports (-ms-ime-align:auto) {
+    .wrapper:before { display:none; } 
+  }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ .wrapper:before { display:none;}
+}
