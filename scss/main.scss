@@ -43,6 +43,7 @@ video{
 .wrapper:before{
     content:'';
     display:block;
+    -ms-display:none;
     position:absolute;
     top:0;
     left:0;
@@ -820,10 +821,3 @@ video{
 
 
 
-//fix for IE
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .wrapper:before{
-         display:none;
-    }
- }

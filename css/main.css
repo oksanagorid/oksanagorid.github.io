@@ -249,6 +249,7 @@ video {
 .wrapper:before {
   content: '';
   display: block;
+  -ms-display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -1166,7 +1167,3 @@ video {
 
 .padding-bottom {
   padding-bottom: 40px; }
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .wrapper:before {
-    display: none; } }
